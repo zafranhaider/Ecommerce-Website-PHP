@@ -21,31 +21,39 @@
 	        				unset($_SESSION['error']);
 	        			}
 	        		?>
-	        		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		                <ol class="carousel-indicators">
-		                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		                  <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-		                  <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-		                </ol>
-		                <div class="carousel-inner">
-		                  <div class="item active">
-		                    <img src="images/banner1.png" alt="First slide">
-		                  </div>
-		                  <div class="item">
-		                    <img src="images/banner2.png" alt="Second slide">
-		                  </div>
-		                  <div class="item">
-		                    <img src="images/banner3.png" alt="Third slide">
-		                  </div>
-		                </div>
-		                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-		                  <span class="fa fa-angle-left"></span>
-		                </a>
-		                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-		                  <span class="fa fa-angle-right"></span>
-		                </a>
-		            </div>
-		            <h2>The Top Sellers</h2>
+<div class="box" style="padding: 20px; background-color: #007bff; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+    <h2 style="text-align: center; margin-bottom: 20px; color: #f8f9fa; font-family: Arial, sans-serif; font-size: 32px; font-weight: bold;">The Top Sellers</h2>
+    
+</div>
+
+
+<div class="box box-solid" style="border: 1px solid #007bff; border-radius: 5px; padding: 10px; background-color: #f8f9fa;">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/banner1.png" alt="First slide">
+            </div>
+            <div class="item">
+                <img src="images/banner2.png" alt="Second slide">
+            </div>
+            <div class="item">
+                <img src="images/banner3.png" alt="Third slide">
+            </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev" >
+            <span class="fa fa-angle-left" style="color: #fff;"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next" >
+            <span class="fa fa-angle-right" style="color: #fff;"></span>
+        </a>
+    </div>
+</div>
+
 
 					
 		       		<?php
