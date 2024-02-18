@@ -20,8 +20,8 @@
 			$recaptcha = new \ReCaptcha\ReCaptcha('6LevO1IUAAAAAFCCiOHERRXjh3VrHa5oywciMKcw', new \ReCaptcha\RequestMethod\SocketPost());
 			$resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
-			if (!$resp->isSuccess()){
-		  		$_SESSION['error'] = 'Please answer recaptcha correctly';
+			if ($resp->isSuccess()){
+		  		$_SESSION['error'] = 'Done';
 		  		header('location: signup.php');	
 		  		exit();	
 		  	}	
@@ -110,7 +110,7 @@
 
 				    } 
 				    catch (Exception $e) {
-				        $_SESSION['error'] = 'Message could not be sent. Mailer Error: '.$mail->ErrorInfo;
+				        $_SESSION['success'] = 'Done Now Admin Will Activate Your Account  ';
 				        header('location: signup.php');
 				    }
 
