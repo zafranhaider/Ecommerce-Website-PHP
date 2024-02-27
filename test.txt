@@ -1,3 +1,0 @@
-fruits["Banana","apple","Mango"]
-for item in fruits:
-print(fruits)
